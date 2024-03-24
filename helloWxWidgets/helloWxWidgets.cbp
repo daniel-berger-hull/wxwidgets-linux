@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="helloWxWidgets" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/helloWxWidgets" prefix_auto="1" extension_auto="1" />
+				<Option object_output="bin/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectIncludeDirsRelation="0" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/helloWxWidgets" prefix_auto="1" extension_auto="1" />
+				<Option object_output="bin/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`wx-config --cxxflags`" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Linker>
+			<Add option="`wx-config --libs`" />
+		</Linker>
+		<Unit filename="hello.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
